@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Info</title>
+
+    <!-- add reset to create consistency between browsers and devices. -->
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+
+    <link rel="stylesheet" type="text/css" href="./info.css">
+
+    <!-- add link to your javascript. be sure it includes "defer" -->
+    <script type="text/javascript" src="./airtable.browser.js" defer></script>
+    <script type="text/javascript" src="./info.js" defer></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <ul class="navbar">
+        <li class="title"> <a href="page1.html">SIGHTS AND SOUNDS OF MEMORY LANE</a></li>
+        <li class="info" style="float:right"> <a href="info.html"><strong>INFO</strong></a></li>
+        <li class="submit" style="float:right"><a href="submission-jotform.html">SUBMISSION</a></li>
+        <li class="directory" style="float:right"><a href="directory.html">INDEX</a></li>
+        <li class="images" style="float:right"><a href="page1.html">ARCHIVE</a></li>
+        <!-- <li><br></li> -->
+
+    </ul>
+
+    <div class="container">
+        <div class="image-container">
+            <!-- <img class = "example-image" src="assets/daily audio 1-15.jpg" alt=""> -->
+            <video class="example-image" controls autoplay>
+                <source src="assets/imagine.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+
+
+
+        <!-- <div id="hcg-slider-1" class="hcg-slider">
+            <div class="hcg-slide-container">
+            <div class="hcg-slider-body">
+                <a class="hcg-slides animated" style="display:flex">
+                    <span class="hcg-slide-number">1/5</span>
+                    <img src="assets/daily audio 1-15.jpg" alt="image 4">
+                    <span class="hcg-slide-text">image 4</span>
+                </a>
+            </div>
+            <a href="#" id="hcg-slide-prev">❮</a>
+            <a href="#" id="hcg-slide-next">❯</a>
+        </div>
+        <div class="hcg-slide-dot-control"></div>
+        </div> -->
+
+
+
+
+        <div class="text-container">
+            <p>Music has the power to trigger memories, for example, listening to a specific song may bring you back to
+                a specific moment in time, or another song may remind you of a specific person.
+                <br><br>
+                All memories also have audio attached to them. For example, Steve Jobs announcing the first iPhone in
+                2007. 
+                <br><br>
+                <i>What would it look like to visualize these audios?</i>
+                <br><br>
+                Visualizing these auditory experiences provides a new way to experience and remember the memory. Perhaps
+                it could even deepen our understanding of the memory or enhance the emotional connection.
+            </p>
+
+            My goal with this project was to use creative coding and generative design to create visuals that
+            encapsulate the emotional journey of memories associated with audio.
+            <br><br>
+            <!-- <br> -->
+            <!-- HOW IT WORKS<br><br> -->
+            The visuals are generated in Processing, using the Minim library to extract data from the audio input. Audio
+            is loaded into the code, and used to generate a visual output by taking the frequency spectrum and amplitude
+            to draw the image. The image is comprised of only circles, and the size and color of each one is controlled
+            by the audio input.
+            <br>
+            <!-- <br> -->
+            <!-- <br> -->
+            <p>KEY</p>
+            <p><img class="key" src="assets/key.png" alt=""></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

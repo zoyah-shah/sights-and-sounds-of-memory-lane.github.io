@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Submission</title>
+
+    <!-- add reset to create consistency between browsers and devices. -->
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+
+    <link rel="stylesheet" type="text/css" href="./submit.css">
+
+    <!-- add link to your javascript. be sure it includes "defer" -->
+    <!-- <script type="text/javascript" src="./airtable.browser.js" defer></script> -->
+    <script type="text/javascript" src="./submit.js" defer></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <ul class="navbar">
+        <li class="title"> <a href="page1.html">SIGHTS AND SOUNDS OF MEMORY LANE</a></li> 
+        <li class="info" style="float:right"> <a href="info.html">INFO</a></li>
+        <li class="submit" style="float:right"> <a href="submit.html"><strong>SUBMISSION</strong></a></li>
+        <li class="directory" style="float:right"><a href="directory.html">INDEX</a></li>
+        <li class="images" style="float:right"><a href="page1.html">ARCHIVE</a></li>
+        
+        
+    </ul>
+
+    <div class="container">
+    
+    </div>
+
+    <div class="flex items-center h-screen w-full bg-orange-100">
+        <div class="w-full bg-white rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
+          <h1 class="block w-full text-center text-grey-darkest mb-6">Submit a memory to be visualized:</h1>
+  
+          <form class="mb-4 flex flex-wrap justify-between" id="form">
+    
+         
+            <div class="flex flex-col w-full mb-4">
+              <label class="field-label" for="email">Name of song/audio</label>
+              <input class="bg-green-100 px-2 py-1 outline-none" type="text" name="Name" id="email">
+            </div>
+
+            <div class="flex flex-col w-full mb-4">
+              <label class="field-label" for="password">Description of memory associated with the audio</label>
+              <textarea class="bg-green-100 px-2 py-1 outline-none" type="text" name="Description" id="Description"></textarea>
+            </div>
+
+            <div class="flex flex-col w-full mb-4">
+                <label class="field-label" for="file">Upload a file</label>
+                <input class="bg-green-100 px-2 py-1 outline-none" type="file" name="File" id="file">
+              </div>
+              
+            
+
+            <!-- <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">
+            </form> -->
+  
+  
+            <input type="date" name="Time" id="">
+            <!-- <input type="checkbox" name="Check" value="true" id=""> -->
+            <button class="bg-orange-300 px-3 py-1 text-white mx-auto" type="submit" id="submit">Submit</button>
+          </form>
+      
+
+</body>
+
+</html>

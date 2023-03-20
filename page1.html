@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sights and Sounds of Memory Lane</title>
+
+    <!-- add reset to create consistency between browsers and devices. -->
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+
+    <link rel="stylesheet" type="text/css" href="./style-page1.css">
+
+    <!-- add link to your javascript. be sure it includes "defer" -->
+    <script type="text/javascript" src="./airtable.browser.js" defer></script>
+    <script type="text/javascript" src="./page1.js" defer></script>
+    <script type="text/javascript" src="./slider.js" defer></script>
+    <script type="text/javascript" src="./top.js" defer></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar-container">
+    <ul class="navbar">
+        <!-- <li class="title"> <a href="page1.html">SIGHTS & SOUNDS<br>OF MEMORY LANE</a></li>  -->
+        <li class="title"> <a href="page1.html">SIGHTS & SOUNDS OF MEMORY LANE</a></li> 
+        <!-- <li class="info" style="float:right "> <a href="info.html">INFO</a></li>
+        <li class="directory" style="float:right"><a href="directory.html">INDEX</a></li>
+        <li class="images" style="float:right"><a href="page1.html">ARCHIVE</a></li> -->
+        <ul class="nav2">
+            <li class="images2" ><a href="page1.html">ARCHIVE</a></li>
+            <li class="directory2" ><a href="directory.html">INDEX</a></li>
+            <li class="submit" ><a href="submission-jotform.html">SUBMISSION</a></li>
+            <li class="info2" > <a href="info.html">INFO</a></li>
+        </ul>
+    </ul>
+</div>
+<!-- <div class="rect"></div> -->
+
+
+    <div class="slidecontainer">
+       
+        
+        <p class="slider-text">VIEW:</p>
+            <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+        
+        <!-- <input type="range" min="1" max="10" value="5" class="slider" id="myRange"> -->
+    </div>
+
+
+    <div class="container" >
+        <!-- <div class = "pop-up"></div> -->
+        <div class="filter">
+            FILTER BY: <br>
+            <span class="music">MUSIC</span> <br>
+            <span class="daily-audio">DAILY AUDIO</span> <br>
+            <span class="significant-moments">SIGNIFICANT MOMENTS</span> <br>
+            <span class="recorded-audio">RECORDED AUDIO</span> <br>
+            <span class="submissions">SUBMISSIONS</span> <br>
+            <span class="js-reset">ALL</span>
+        </div>
+    
+    </div>
+
+    
+    <button onclick="topFunction()" id="backToTop" title="Go to top">TOP</button>
+
+    </div>
+
+
+</body>
+
+</html>

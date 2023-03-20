@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=IBM+Plex+Mono&display=swap');
+@import url("https://use.typekit.net/oto1ukw.css");
+
+body {
+    /* font-family: Arial; */
+    padding: 2rem;
+    background-color: black;
+    font-family: 'IBM Plex Mono', monospace;
+    overflow-x: hidden;
+}
+
+/* h1{
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin: 0;
+} */
+
+
+.filter{
+    color: white;
+    display: block;
+    padding-left: 1rem;
+    font-size: 14px;
+}
+
+.music, .recorded-audio, .significant-moments, .daily-audio, .submissions, .js-reset{
+    cursor: pointer;
+}
+
+.music:hover, .recorded-audio:hover, .significant-moments:hover, .daily-audio:hover, .submissions:hover, .js-reset:hover{
+    text-decoration: underline;
+}
+
+/* .music:checked, .recorded-audio:checked, .significant-moments:checked, .daily-audio:checked, .submissions:checked, .js-reset:checked{
+    font-weight: 800;
+} */
+
+.navbar{
+    /* margin-left: -5px; */
+    /* font-family: 'Avenir', sans-serif; */
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    padding-left: 1rem;
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+    list-style-type: none;
+    /* border-bottom: solid white 1px; */
+    /* border-bottom: solid white 6px; */
+    padding-bottom: 1rem;
+    /* vertical-align: top; */
+    /* display: inline; */
+}
+
+/* .navbar-container{
+    display: inline-block;
+    vertical-align: top;
+    top: 100px;
+} */
+
+.title{
+    display: inline-block;
+    margin-left: -1rem;
+    margin-top: -2rem;
+    font-family: 'IBM Plex Mono', monospace;
+    /* font-size: 8rem; */
+    font-size: 8vw;
+    /* inline-size: 2rem; */
+    width: 77%;
+
+}
+
+li{
+    /* display: block; */
+    /* margin-right: 1rem; */
+    list-style-type: none;
+    
+    /* vertical-align: text-top; */
+    /* top: -100px; */
+    /* bottom: 100px; */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.nav2{
+    width: 50px;
+    float: right;
+}
+.info2, .directory2, .images2, .submit{
+    /* display: flex; */
+    padding-bottom: 1rem;
+    float: right;
+    overflow: auto;
+}
+
+.submit:hover{
+    text-decoration: underline;
+}
+
+.directory2:hover{
+    text-decoration: underline;
+}
+
+.info2:hover{
+    text-decoration: underline;
+}
+
+.directory{
+    /* display: block;s */
+    margin-right: 6rem;
+    top: 200px;
+    /* float: top; */
+    /* position: relative;
+    top: -90px; */
+}
+
+.images2{
+    font-weight: 800;
+    /* position: relative;
+    top: -90px; */
+}
+
+/* .info{
+    position: relative;
+    top: -90px;
+} */
+
+.images2:hover{
+    text-decoration: none;
+}
+/* .song-container{ */
+    /* display: grid; */
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* grid-template-rows: repeat(5, 1fr); */
+    /* grid-column-gap: 6px; */
+    /* grid-row-gap: 6px; */
+    /* grid-auto-rows: max-content; */
+ /* } */
+
+ .container{
+    padding-top: -2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+ }
+
+.song-image{
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+    /* margin: 6px; */
+    /* margin-top: 6px; */
+    /* padding: 6px; */
+    /* display: grid; */
+}
+
+.song-image:hover{
+    /* border-radius: 50%; */
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: .5
+}
+
+
+
+.audio-file{
+    display:none;
+    z-index: 1;
+}
+
+.audio-file.active{
+    display: block;
+    color: white;
+}
+
+/* .song-description{
+    display: none;
+}
+
+.song-image.active{
+    display: block;
+}
+
+.song-description.active{
+    display: block;
+} */
+
+
+.song-description{
+    font-family: 'Avenir', sans-serif;
+    /* padding-left: 2rem; */
+    font-weight: 400;
+    color: grey;
+    font-size: 14px;
+    display: none;
+    
+}
+
+.song-category{
+    font-family: 'Avenir', sans-serif;
+    /* padding-left: 2rem; */
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+    display: none;
+}
+
+.song-name{
+    font-family: 'Avenir', sans-serif;
+    /* padding-left: 2rem; */
+    font-weight: 400;
+    color: rgb(64, 63, 63);
+    font-size: 16px;
+    display:none;
+}
+
+.song-description.active{
+    display: block;
+}
+
+.song-name.active{
+    display: block;
+}
+
+.images{
+    margin-right: 6rem;
+}
+
+.rect{
+    /* position: relative; */
+    height: 8px;
+  width: 38%;
+  background-color: white;
+  padding-left: 2rem;
+}
+
+
+
+.slider-text{
+    /* display: inline; */
+    position: relative;
+    /* display: flex; */
+    /* position: sticky; */
+    color:white;
+    font-family: 'IBM Plex Mono', monospace;
+    padding-left: 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    top: -20px;
+    /* right: -1320px;
+    top: -40px; */
+    /* right: -100vw;
+    top: -40px; */
+
+    /* left: 100px; */
+    /* text-align: right; */
+    /* float: right; */
+    /* text-align: right; */
+
+}
+.slidecontainer {
+    width: 100vw;
+    padding-top: 1rem;
+  }
+  
+  
+
+input[type="range"] {
+    position: relative;
+    /* display: flex; */
+    /* display: inline; */
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15%;
+    /* display: inline; */
+    padding-left: 1rem;
+    /* float: right; */
+    /* right: -1390px; */
+    top: -50px;
+    left: 55px;
+    /* float: right; */
+  }
+  
+
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #444444;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -4px; /* Centers thumb on the track */
+    background-color: #ffffff;
+    /* border-radius: 0.5rem; */
+    height: 1rem;
+    width: .3rem;
+  }
+  
+  /* input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid #808080;
+    outline-offset: 0.125rem;
+  } */
+
+
+
+  #backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #00000080;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    /* border-radius: 4px; */
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    height: auto;
+    text-align: center;
+  }
+  
+  #backToTop:hover {
+    /* background-color: #000000; */
+    background-color: #000000;
+    /* border: 1px solid white ; */
+  }
+
+  audio{
+    display:flex;
+    width: 40%;
+    height: 40px;
+    background-color: black !important; 
+    border: 1px solid white;
+    color: white !important;
+    box-shadow: 0px 0px 0px 0px #000000 !important;
+  }
+
+
+
+
+  /* styles for screens larger than 768px */
+@media only screen and (max-width: 900px) {
+    /* body{
+        background-color: red;
+    } */
+
+    /* .title{
+        font-size: 4rem;
+        width: 74%;
+    } */
+
+    /* li{
+        margin-right: 0rem;
+        font-size: 13px;
+    }
+
+    .directory{
+        position: relative;
+        margin-right: 2rem;
+        top: -15px;
+
+    }
+    
+    .images{
+        font-weight: 800;
+        position: relative;
+        top: -130px;
+        right: 40px;
+    }
+    .info{
+        position: relative;
+        top: -15px;
+    } */
+
+    /* .slider-text{
+        right: -550px;
+        top: 10px;
+    }
+    
+    input[type="range"] {
+        width: 25%;
+        right: -600px;
+        top: -20px;
+      } */
+
+
+  }
+  
+  /* styles for screens smaller than 768px */
+  @media only screen and (max-width: 568px) {
+    /* body{
+        background-color: blue;
+    } */
+
+    /* .title{
+        font-size: 2rem;
+        width: 74%;
+        padding-top: 12px;
+    } */
+
+/* 
+    .directory{
+        margin-right: 2rem;
+        top: 100px;
+        right: 260px;
+    }
+    
+    .images{
+        font-weight: 800;
+        position: relative;
+        top: 45px;
+        right: 300px;
+    }
+    .info{
+        position: relative;
+        top: 100px;
+        right: 250px;
+    } */
+/* 
+    .rect{
+        position: relative;
+        height: 3px;
+      width: 30%;
+      background-color: white;
+      padding-left: 2rem;
+      top: -30px;
+    }
+
+    .slider-text{
+        right: -270px;
+        top: 10px;
+    }
+    .slidecontainer {
+        width: 100%;
+        padding-top: 1rem;
+      }
+      
+    
+    input[type="range"] {
+        width: 25%;
+        right: -325px;
+        top: -20px;
+      } */
+      .filter{
+        color: white;
+        display: block;
+        padding-left: 1rem;
+        font-size: 10px;
+    }
+
+      
+
+  }
+  
